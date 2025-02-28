@@ -364,7 +364,7 @@ export function ContactSection() {
                   </div>
                   <div>
                     <h4 className="font-semibold">Phone</h4>
-                    <p className="text-muted-foreground mt-1">+1 (123) 456-7890</p>
+                    <p className="text-muted-foreground mt-1">09266210532</p>
                   </div>
                 </div>
 
@@ -388,7 +388,7 @@ export function ContactSection() {
                   </div>
                   <div>
                     <h4 className="font-semibold">Email</h4>
-                    <p className="text-muted-foreground mt-1">contact@example.com</p>
+                    <p className="text-muted-foreground mt-1">junemandigma@gmail.com</p>
                   </div>
                 </div>
 
@@ -412,7 +412,7 @@ export function ContactSection() {
                   </div>
                   <div>
                     <h4 className="font-semibold">Location</h4>
-                    <p className="text-muted-foreground mt-1">San Francisco, CA</p>
+                    <p className="text-muted-foreground mt-1">Batangas, Philippines</p>
                   </div>
                 </div>
 
@@ -420,7 +420,7 @@ export function ContactSection() {
                   <h4 className="font-semibold mb-3">Follow Me</h4>
                   <div className="flex space-x-4">
                     <a
-                      href="#"
+                      href="https://github.com/junerhomel"
                       className="bg-primary/10 p-3 rounded-full hover:bg-primary/20 transition-colors"
                       aria-label="GitHub"
                     >
@@ -441,7 +441,7 @@ export function ContactSection() {
                       </svg>
                     </a>
                     <a
-                      href="#"
+                      href="https://www.linkedin.com/in/june-rhomel-mandigma-69859a175/"
                       className="bg-primary/10 p-3 rounded-full hover:bg-primary/20 transition-colors"
                       aria-label="LinkedIn"
                     >
@@ -460,26 +460,6 @@ export function ContactSection() {
                         <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
                         <rect width="4" height="12" x="2" y="9" />
                         <circle cx="4" cy="4" r="2" />
-                      </svg>
-                    </a>
-                    <a
-                      href="#"
-                      className="bg-primary/10 p-3 rounded-full hover:bg-primary/20 transition-colors"
-                      aria-label="Twitter"
-                    >
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="24"
-                        height="24"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        stroke="currentColor"
-                        strokeWidth="2"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        className="text-primary h-5 w-5"
-                      >
-                        <path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z" />
                       </svg>
                     </a>
                   </div>
