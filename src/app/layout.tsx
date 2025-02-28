@@ -36,7 +36,7 @@ export const metadata: Metadata = {
     siteName: "June Rhomel Portfolio",
     images: [
       {
-        url: "/og-image.png", // You'll need to create this image in the public folder
+        url: "/og-image.jpg", // You'll need to create this image in the public folder
         width: 1200,
         height: 630,
         alt: "June Rhomel - Software Engineer",
@@ -47,7 +47,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "June Rhomel | Software Engineer",
     description: "Professional portfolio of June Rhomel, a software engineer with expertise in web development, React, Next.js, and modern JavaScript frameworks.",
-    images: ["/og-image.png"], // Same image as OpenGraph
+    images: ["/og-image.jpg"], // Same image as OpenGraph
   },
   robots: {
     index: true,
