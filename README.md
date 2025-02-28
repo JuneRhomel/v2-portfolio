@@ -106,4 +106,4 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 
 ---
 
-Built with ❤️ by [Your Name]
+Built with ❤️ by June Rhomel
