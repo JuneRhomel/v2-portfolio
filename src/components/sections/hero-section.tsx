@@ -316,7 +316,7 @@ export function HeroSection() {
                     }}
                   >
                     <span className="block transform hover:scale-110 transition-transform duration-300 cursor-pointer">
-                      <Image src="/me.png" alt="June Rhomel Mandigma" width={400} height={400} />
+                      <Image src="/me-profile.png" alt="June Rhomel Mandigma" width={400} height={400} />
                     </span>
                     <motion.div
                       className="absolute -inset-4 bg-primary/20 rounded-full blur-xl -z-10"
