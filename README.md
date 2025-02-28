@@ -13,7 +13,7 @@ A modern, responsive portfolio website built with Next.js, TypeScript, Tailwind 
 - 🧩 Component-based architecture
 - 🔍 SEO optimized
 - 📊 Animated skill bars
-- 📝 Contact form with validation
+- 📝 Contact form with EmailJS integration
 - 🔄 Interactive timeline for experience section
 
 ## Tech Stack
@@ -23,8 +23,7 @@ A modern, responsive portfolio website built with Next.js, TypeScript, Tailwind 
 - **Styling**: Tailwind CSS
 - **UI Components**: Shadcn UI
 - **Animations**: Framer Motion
-- **Form Handling**: React Hook Form (coming soon)
-- **Validation**: Zod (coming soon)
+- **Email Service**: EmailJS
 - **Deployment**: Vercel (recommended)
 
 ## Getting Started
@@ -33,6 +32,7 @@ A modern, responsive portfolio website built with Next.js, TypeScript, Tailwind 
 
 - Node.js 18.17 or later
 - npm or yarn or pnpm
+- EmailJS account for contact form functionality
 
 ### Installation
 
@@ -51,7 +51,15 @@ A modern, responsive portfolio website built with Next.js, TypeScript, Tailwind 
    pnpm install
    ```
 
-3. Run the development server:
+3. Set up environment variables:
+   Create a `.env.local` file in the root directory with the following variables:
+   ```
+   NEXT_PUBLIC_EMAILJS_SERVICE_ID=your_service_id
+   NEXT_PUBLIC_EMAILJS_TEMPLATE_ID=your_template_id
+   NEXT_PUBLIC_EMAILJS_PUBLIC_KEY=your_public_key
+   ```
+
+4. Run the development server:
    ```bash
    npm run dev
    # or
@@ -60,7 +68,7 @@ A modern, responsive portfolio website built with Next.js, TypeScript, Tailwind 
    pnpm dev
    ```
 
-4. Open [http://localhost:3000](http://localhost:3000) in your browser to see the result.
+5. Open [http://localhost:3000](http://localhost:3000) in your browser to see the result.
 
 ## Customization
 
@@ -83,14 +91,26 @@ The project uses Tailwind CSS for styling. You can customize the theme in the `t
 
 To add or modify projects, edit the `projects` array in `src/components/sections/projects-section.tsx`.
 
+### Setting Up EmailJS
+
+1. Create an account on [EmailJS](https://www.emailjs.com/)
+2. Create an email service (Gmail, Outlook, etc.)
+3. Create an email template with variables like `{{from_name}}`, `{{from_email}}`, `{{subject}}`, `{{message}}`, and `{{date}}`
+4. Get your service ID, template ID, and public key
+5. Add these values to your environment variables
+
 ## Deployment
 
 The easiest way to deploy your portfolio is using [Vercel](https://vercel.com), the platform from the creators of Next.js.
 
 1. Push your code to a GitHub repository.
 2. Import your project to Vercel.
-3. Vercel will detect that you're using Next.js and set up the build configuration for you.
-4. Your site will be deployed to a URL like `your-project.vercel.app`.
+3. Add your EmailJS environment variables in the Vercel project settings:
+   - `NEXT_PUBLIC_EMAILJS_SERVICE_ID`
+   - `NEXT_PUBLIC_EMAILJS_TEMPLATE_ID`
+   - `NEXT_PUBLIC_EMAILJS_PUBLIC_KEY`
+4. Vercel will detect that you're using Next.js and set up the build configuration for you.
+5. Your site will be deployed to a URL like `your-project.vercel.app`.
 
 ## License
 
@@ -103,6 +123,7 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 - [Shadcn UI](https://ui.shadcn.com/)
 - [Framer Motion](https://www.framer.com/motion/)
 - [React Intersection Observer](https://github.com/thebuilder/react-intersection-observer)
+- [EmailJS](https://www.emailjs.com/)
 
 ---
 

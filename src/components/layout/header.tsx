@@ -6,6 +6,7 @@ import { motion } from 'framer-motion'
 import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet'
 import { Button } from '@/components/ui/button'
 import { ThemeToggle } from '@/components/theme/theme-toggle'
+import { ColorPicker } from '@/components/theme/color-picker'
 
 const navItems = [
   { name: 'Home', href: '/' },
@@ -47,7 +48,10 @@ export function Header() {
               {item.name}
             </Link>
           ))}
-          <ThemeToggle />
+          <div className="flex items-center gap-2">
+            <ColorPicker />
+            <ThemeToggle />
+          </div>
           <Button asChild>
             <Link href="#contact">Hire Me</Link>
           </Button>
@@ -56,6 +60,7 @@ export function Header() {
         {/* Mobile navigation */}
         <Sheet>
           <div className="flex items-center gap-2 md:hidden">
+            <ColorPicker />
             <ThemeToggle />
             <SheetTrigger asChild className="md:hidden">
               <Button variant="ghost" size="icon" aria-label="Menu">

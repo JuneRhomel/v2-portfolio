@@ -370,8 +370,8 @@ export function ContactSection() {
                   <Button
                     type="submit"
                     className={`w-full ${theme === 'dark'
-                      ? 'bg-gradient-to-r from-primary to-primary/90 hover:from-primary/90 hover:to-primary'
-                      : 'bg-gradient-to-r from-primary to-primary/80 hover:from-primary/90 hover:to-primary'
+                      ? ' from-primary to-primary/90 hover:from-primary/90 hover:to-primary'
+                      : ' from-primary to-primary/80 hover:from-primary/90 hover:to-primary'
                       }`}
                     disabled={isSubmitting}
                   >

@@ -364,20 +364,7 @@ export function ExperienceSection() {
             })}
           </div>
           
-          {/* End marker */}
-          <motion.div 
-            className="absolute left-8 md:left-1/2 bottom-0 w-6 h-6 rounded-full bg-green-500 -translate-x-1/2 translate-y-1/2 flex items-center justify-center"
-            initial={{ scale: 0 }}
-            animate={{ scale: 1 }}
-            transition={{ 
-              delay: 1.5,
-              type: "spring", 
-              stiffness: 500, 
-              damping: 15 
-            }}
-          >
-            <div className="w-2 h-2 rounded-full bg-background"></div>
-          </motion.div>
+
         </div>
         
         {/* Future indicator */}
