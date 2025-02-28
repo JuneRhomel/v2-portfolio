@@ -26,6 +26,7 @@ module.exports = {
         "destructive-foreground": "var(--destructive-foreground)",
         border: "var(--border)",
         input: "var(--input)",
+        "input-foreground": "var(--input-foreground)",
         ring: "var(--ring)",
       },
       borderRadius: {
